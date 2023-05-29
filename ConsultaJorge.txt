@@ -1,0 +1,26 @@
+n = [-10:10];
+x = 1*(n==0);
+
+figure, stem(n,x);
+
+y = zeros(size(x));
+
+for k = 1:length(x)
+    switch k
+        case 1
+            y(k) = 1*x(k);
+        case 4
+            y(k) = 1*x(k)+(0.35)*x(k-3);
+        case 5
+            y(k) =  1*x(k)+(0.35)*x(k-3)+(-0.2)*x(k-4);
+        case 7
+            y(k) = 1*x(k)+(0.35)*x(k-3)+(-0.2)*x(k-4)+(-0.1)*x(k-6);
+        case 8
+            y(k) = 1*x(k)+(0.35)*x(k-3)+(-0.2)*x(k-4)+(-0.1)*x(k-6)+(-0.05)*x(k-7);
+     else
+                 y(k)=0;
+
+    end
+end
+
+stem(n,y);

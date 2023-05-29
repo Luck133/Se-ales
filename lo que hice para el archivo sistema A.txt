@@ -1,0 +1,10 @@
+Le cambie en value  por :
+
+1*201
+
+
+y se me convirtió en matriz 
+
+
+Lo nuevo es ponerle en value nada más que "n" (sin comillas)
+que es el eje de las x
